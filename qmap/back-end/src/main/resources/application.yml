@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driverClassName: org.sqlite.JDBC
+    url: jdbc:sqlite:backend.db
+    username:
+    password:
+  data:
+    mongodb:
+      uri: mongodb://localhost/test
+  jpa:
+    show-sql: true
+    database-platform: com.enigmabridge.hibernate.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+debug: false
